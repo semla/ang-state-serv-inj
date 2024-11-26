@@ -6,6 +6,7 @@ import { Subscription } from 'rxjs';
   selector: 'app-data',
   standalone: true,
   imports: [AsyncPipe, JsonPipe],
+  providers:[StateService],
   templateUrl: './data.component.html',
   styleUrl: './data.component.css'
 })

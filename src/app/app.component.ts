@@ -7,6 +7,7 @@ import {DataComponent} from './data.component';
   template: `
 <h1>Product types</h1>
 <app-data></app-data>
+<app-data [product]="'Phone'"></app-data>
 `,
   styles: [],
 })
