@@ -1,17 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import {DataComponent} from './data.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [DataComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
+<h1>Product types</h1>
+<app-data></app-data>
+`,
   styles: [],
 })
-export class AppComponent {
-  title = 'service-injection-alternatives';
+export class AppComponent{
+
 }

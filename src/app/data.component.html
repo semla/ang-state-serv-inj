@@ -1,0 +1,13 @@
+<section>
+    <h2>{{product}}:</h2>
+    @for (item of (stateService.data$ | async); track $index) {
+<h3>{{ item.title }}</h3>
+<ul>
+    <li>{{ item.description }}</li>
+    <li>price: {{ item.price }}$</li>
+</ul>
+} @empty {
+<li>There are no items.</li>
+}
+</section>
+<!-- <p>{{stateService.data$|async|json}}</p> -->

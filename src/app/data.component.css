@@ -1,0 +1,12 @@
+h3 {
+    font-size: medium;
+}
+section{
+    margin-left: 3rem;
+}
+section > ul {
+    margin-left: 3rem;
+}
+section > h3 {
+    margin-left: 2rem;
+}
